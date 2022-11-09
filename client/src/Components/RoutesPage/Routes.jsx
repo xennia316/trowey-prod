@@ -15,7 +15,6 @@ function Routes() {
         <Dailyroutes day="Saturday" />
         <Dailyroutes day="Sunday" />
           </div>
-          <p>Want to collect dirt for a fee?</p>
     </main>
   );
 }
