@@ -1,0 +1,7 @@
+.homeWrapper{
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+}
