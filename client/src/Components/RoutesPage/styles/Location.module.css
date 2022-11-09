@@ -1,0 +1,16 @@
+.container{
+    margin-top: 1em;
+}
+.location {
+    font-size: 1.25em;
+}
+@media screen and (max-width: 573px) {
+    .location {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 492px) {
+    .location {
+        font-size: 0.8em;
+    }
+}
