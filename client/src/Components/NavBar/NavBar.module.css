@@ -1,14 +1,18 @@
+.wrapper {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     padding: 0 5rem;
     color: #4c5b00;
-    font-size: larger;
+    font-size: 1.75rem;
     font-weight: bolder;
-    box-shadow: 5px 3px 3px gray;
 }
 .listContainer {
     display: flex;
@@ -27,13 +31,36 @@
     display: none;
 }
 
-
-@media screen and (max-width: 1024px){
-    .toggler{
+@media screen and (max-width: 1214px) {
+    .wrapper{
+        width: 100vw;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0;
         display: block;
     }
-    .container, .listContainer{
+    .toggler {
+        display: block;
+        padding: 3rem;
+        align-self: flex-end;
+    }
+   .container{
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-between;
+   }
+    .listContainer {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 30%;
+        height: auto;
+    }
+    .listItems,
+    .listItem {
+        font-size: 2.5rem;
     }
 }
