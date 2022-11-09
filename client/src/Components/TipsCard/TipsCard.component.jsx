@@ -11,6 +11,8 @@ const TipsCard = () => {
         <h2 className={`${styles.h2}`}>This is dummy text here oh yes it is</h2>
         <p className={`${styles.p}`}>
           This is alsoo dummy text and I don't care about y typos because I'm
+          tired. This is alsoo dummy text and I don't care about y typos because I'm
+          tired. This is alsoo dummy text and I don't care about y typos because I'm
           tired
         </p>
       </section>

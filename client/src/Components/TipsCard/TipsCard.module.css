@@ -8,3 +8,11 @@
     width: 30rem;
     margin: 0 auto;
 }
+
+.p {
+    display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+  	overflow: hidden;
+}
