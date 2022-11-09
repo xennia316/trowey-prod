@@ -1,0 +1,10 @@
+.cardWrapper {
+    width: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    padding: 1rem 0;
+}
+.container {
+    width: 30rem;
+    margin: 0 auto;
+}
