@@ -8,7 +8,11 @@ function Login() {
         <h2>Login</h2>
         <div className={LoginStyles.inputs}>
           <Input label="Phone Number" placeholder="6xx xxx xxx" />
-          <Input label="Password" placeholder="Password" sublabel="Forgot password"/>
+          <Input
+            label="Password"
+            placeholder="Password"
+            sublabel="Forgot password"
+          />
         </div>
         <button>Login</button>
         <p className={LoginStyles.smallText}>Don't have an account? <Link className={LoginStyles.link}>Sign up</Link> </p>

@@ -2,7 +2,16 @@
     padding: 0.5rem 1rem;
     background-color: #4c5b00;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 8rem;
     cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 720px){
+    .button{
+        width: 12rem;
+        padding: 1.25rem;
+        font-size: 24px;
+    }
 }
