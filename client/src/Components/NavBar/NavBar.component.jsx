@@ -29,11 +29,21 @@ const NavBar = () => {
         {isopen ? (
           <ul className={`${styles.listContainer}`} role="group">
             <section className={`${styles.toggler}`}>{toggler}</section>
-            <NavLink to='/' className={`${styles.listItems}`}>Home</NavLink >
-            <NavLink  className={`${styles.listItems}`}>About</NavLink >
-            <NavLink to='/routes' className={`${styles.listItems}`}>Routes</NavLink >
-            <NavLink  className={`${styles.listItems}`}>Tips</NavLink >
-            <NavLink to="/login" className={`${styles.listItems}`}>Login</NavLink >
+            <NavLink to="/" className={`${styles.listItems}`}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={`${styles.listItems}`}>
+              About
+            </NavLink>
+            <NavLink to="/routes" className={`${styles.listItems}`}>
+              Routes
+            </NavLink>
+            <NavLink to="/tips" className={`${styles.listItems}`}>
+              Tips
+            </NavLink>
+            <NavLink to="/login" className={`${styles.listItems}`}>
+              Login
+            </NavLink>
           </ul>
         ) : (
           <section className={`${styles.toggler}`}>{toggler}</section>
