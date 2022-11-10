@@ -39,3 +39,14 @@
 .p::after:hover {
     color: #4c5b00;
 }
+@media screen and (max-width: 560px) {
+    .cardWrapper {
+        width: 28rem;
+        padding: 1rem;
+        overflow-wrap: break-word;
+        margin: 0 auto;
+    }
+    .p {
+        overflow-wrap: break-word;
+    }
+}
