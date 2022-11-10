@@ -21,7 +21,11 @@
     align-items: center;
     width: 50%;
 }
-
+.listItems{
+    text-decoration: none;
+    color: inherit;
+    /* high */
+}
 .listItems:hover,
 .toggler:hover {
     cursor: pointer;
