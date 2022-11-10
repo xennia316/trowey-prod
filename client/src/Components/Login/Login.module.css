@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+}
+
+.form {
+    width: 30em;
+    height: 23em;
+    padding: 2em;
+    position: absolute;
+    border-radius: 0.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+span {
+    color: #b04b01
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.label {
+    margin-bottom: 0.5em;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input {
+    outline: none;
+    height: 2.4em;
+    border: 2px solid #898B81;
+    border-radius: 0.25em;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: #898B81;
+}

@@ -21,7 +21,11 @@
     align-items: center;
     width: 50%;
 }
-
+.listItems{
+    text-decoration: none;
+    color: inherit;
+    /* high */
+}
 .listItems:hover,
 .toggler:hover {
     cursor: pointer;
@@ -39,12 +43,13 @@
         width: 100%;
         height: auto;
         padding: 0;
-        display: block;
+        font-size: 1rem;
     }
     .toggler {
         display: block;
         padding: 3rem;
         align-self: flex-end;
+        font-size: 28px;
     }
    .container{
        display: flex;
@@ -62,5 +67,21 @@
     .listItems,
     .listItem {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 514px){
+    .wrapper{
+        width: fit-content;
+        padding: 1.5rem;
+    }
+    .container{
+        display: block;
+        width: 100vw;
+    }
+
+    .toggler{
+        font-size: 24px;
+        padding: 1rem;
     }
 }

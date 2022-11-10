@@ -1,0 +1,69 @@
+.h2 {
+    font-size: 32px;
+}
+.container {
+    padding: 3rem;
+    width: 80%;
+    margin: auto;
+}
+.innerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem 4rem;
+    padding: 3rem 0;
+}
+.textArea {
+    resize: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.label {
+    font-size: 24px;
+}
+.textArea::placeholder {
+    font-size: 24px;
+}
+.textArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+.textArea:focus {
+    outline: none;
+    border: 2px solid gray;
+}
+.btnWrap {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    width: 24rem;
+    background-color: #4c5b00;
+    color: #fff;
+    padding: 1rem 0.75rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+@media screen and (max-width: 900px) {
+    .container{
+        padding: 1rem;
+    }
+    .innerGrid {
+        grid-template-columns: repeat(1, auto);
+    }
+    .textArea {
+        width: 28rem;
+    }
+}
+@media screen and (max-width: 514px) {
+    .textArea {
+        width: 19rem;
+    }
+    .btn {
+        width: 18rem;
+    }
+}
