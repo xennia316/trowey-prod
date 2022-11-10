@@ -5,7 +5,9 @@ function Input({ label, placeholder, sublabel }) {
     <div className={InputStyles.input}>
       <div className={InputStyles.label}>
         <label htmlFor="">{label}</label>
-        <label htmlFor="">{sublabel}</label>
+        <label className={InputStyles.sublabel} htmlFor="">
+          {sublabel}
+        </label>
       </div>
       <input type="text" placeholder={placeholder} />
     </div>

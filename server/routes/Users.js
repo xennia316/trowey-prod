@@ -45,8 +45,8 @@ router.post('/register', async (req, res) => {
     }
 
     try {
-        await Users.create(data);
-        const key = jwt.sign(JSON.stringify(data), JWT_SECRET);
+        const user = await Users.create(data);
+        const key = jwt.sign(JSON.stringify(user), JWT_SECRET);
         res.json(key);
     } catch (e) {
         console.error(e);
