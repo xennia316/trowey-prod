@@ -1,10 +1,10 @@
 import React from "react";
-import { TipsCard } from "../../Components";
+import { TipSection } from "../../Sections";
 
 const Tips = () => {
   return (
     <section>
-      <TipsCard />
+      <TipSection />
     </section>
   );
 };

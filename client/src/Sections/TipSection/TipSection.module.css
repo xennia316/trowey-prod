@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100vw;
+    height: fit-content;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 6rem;
+    padding: 5rem 0;
+}
+.h2{
+    font-size: 64px;
+    color:  #4c5b00;
+    width: 64%;
+    margin: 2rem auto;
+}

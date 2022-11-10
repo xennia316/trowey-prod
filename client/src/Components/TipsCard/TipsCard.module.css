@@ -1,8 +1,12 @@
 .cardWrapper {
     width: 35rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     padding: 1rem 0;
+    background-color: #fef;
+}
+.cardWrapper:hover {
+    cursor: pointer;
 }
 .container {
     width: 30rem;
@@ -12,10 +16,10 @@
 .p {
     display: -webkit-box;
     position: relative;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	text-overflow: none;
-  	overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: none;
+    overflow: hidden;
 }
 
 .p::after {
@@ -26,12 +30,12 @@
     padding: 0.1rem 0.2rem;
     padding-left: 2.5rem;
     background: linear-gradient(to right, transparent 10%, #ffffff 30%, #ffffff);
-    color: green;
+    color: #4c5b00;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
 .p::after:hover {
-    color: rgba(0, 128, 0, 0.603);
+    color: #4c5b00;
 }
