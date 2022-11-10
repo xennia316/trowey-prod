@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80vw;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+
+.heading {
+    font-size: 4em;
+    font-weight: 500;
+    color: #4C5B00;
+    margin-bottom: 0.25em;
+}
+
+.subheading {
+    font-size: 2em;
+}
+
+.dailyRouteSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 870px) {
+    .dailyRouteSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

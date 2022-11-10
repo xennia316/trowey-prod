@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
+import { NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faList } from "@fortawesome/free-solid-svg-icons";
@@ -28,11 +29,11 @@ const NavBar = () => {
         {isopen ? (
           <ul className={`${styles.listContainer}`} role="group">
             <section className={`${styles.toggler}`}>{toggler}</section>
-            <li className={`${styles.listItems}`}>Home</li>
-            <li className={`${styles.listItems}`}>About</li>
-            <li className={`${styles.listItems}`}>Routes</li>
-            <li className={`${styles.listItems}`}>Tips</li>
-            <li className={`${styles.listItems}`}>Login</li>
+            <NavLink to='/' className={`${styles.listItems}`}>Home</NavLink >
+            <NavLink  className={`${styles.listItems}`}>About</NavLink >
+            <NavLink to='/routes' className={`${styles.listItems}`}>Routes</NavLink >
+            <NavLink  className={`${styles.listItems}`}>Tips</NavLink >
+            <NavLink to="/login" className={`${styles.listItems}`}>Login</NavLink >
           </ul>
         ) : (
           <section className={`${styles.toggler}`}>{toggler}</section>

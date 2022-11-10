@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import { Home, Tips } from "../Pages";
-
+import MyRoutes from "../Components/RoutesPage/Routes";
+import Login from "../Components/Login/Login";
 const Routers = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -24,6 +25,8 @@ const Routers = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/routes" element={<MyRoutes />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/tips" element={<Tips />} />
       </Routes>
     </Router>
