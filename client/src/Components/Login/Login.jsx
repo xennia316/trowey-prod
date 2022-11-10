@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import LoginStyles from "./Login.module.css";
 import Input from "../Inputs/Input";
 function Login() {
@@ -10,7 +11,7 @@ function Login() {
           <Input label="Password" placeholder="Password" sublabel="Forgot password"/>
         </div>
         <button>Login</button>
-        Don't have an account? Sign Up
+        <p className={LoginStyles.smallText}>Don't have an account? <Link className={LoginStyles.link}>Sign up</Link> </p>
       </form>
     </div>
   );
