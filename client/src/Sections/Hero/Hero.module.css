@@ -2,7 +2,7 @@
     padding: 8rem;
     height: 75vh;
     overflow-x: hidden;
-    width: 95%;
+    width: 100%;
     z-index: 2;
     display: flex;
     justify-content: space-between;
