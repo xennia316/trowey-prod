@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
-import { Home, Tips, AdminSignUp } from "../Pages";
+import { Home, Tips, AdminSignUp, About } from "../Pages";
 import MyRoutes from "../Components/RoutesPage/Routes";
 import Login from "../Components/Login/Login";
 import Signup from "../Components/signup/Signup";
@@ -34,6 +34,7 @@ const Routers = () => {
         <Route path="/routes" element={<MyRoutes />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tips" element={<Tips />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
