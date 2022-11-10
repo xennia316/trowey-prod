@@ -1,8 +1,12 @@
 .cardWrapper {
     width: 35rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     padding: 1rem 0;
+    background-color: #fef;
+}
+.cardWrapper:hover {
+    cursor: pointer;
 }
 .container {
     width: 30rem;
@@ -11,8 +15,38 @@
 
 .p {
     display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	text-overflow: ellipsis;
-  	overflow: hidden;
+    position: relative;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: none;
+    overflow: hidden;
+}
+
+.p::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "Read More...";
+    padding: 0.1rem 0.2rem;
+    padding-left: 2.5rem;
+    background: linear-gradient(to right, transparent 10%, #ffffff 30%, #ffffff);
+    color: #4c5b00;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.p::after:hover {
+    color: #4c5b00;
+}
+@media screen and (max-width: 560px) {
+    .cardWrapper {
+        width: 28rem;
+        padding: 1rem;
+        overflow-wrap: break-word;
+        margin: 0 auto;
+    }
+    .p {
+        overflow-wrap: break-word;
+    }
 }
