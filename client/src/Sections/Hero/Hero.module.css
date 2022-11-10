@@ -1,40 +1,53 @@
 .HeroLander {
-    background-image: url(../../Resources/hero_image.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    position: relative;
     padding: 8rem;
-    height: 100vh;
+    height: 75vh;
     overflow-x: hidden;
     width: 95%;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bigText {
-    font-size: 7rem;
+    font-size: 8rem;
     line-height: 1;
     color: #4c5b00;
 }
 .smallText {
     font-size: larger;
 }
-
-@media screen  and (max-width: 1214px){
-    .HeroLander{
+@media screen and (max-width: 1700px) {
+    .HeroLander {
         padding: 2rem;
+        display: block;
     }
-    .bigText{
+    .image {
+        display: none;
+    }
+    .left{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1214px) {
+    .HeroLander {
+        padding: 2rem;
+        display: block;
+    }
+
+    .bigText {
         line-height: 1.3;
         position: relative;
         z-index: 2;
     }
 }
-@media screen  and (max-width: 415px){
-    .bigText{
+@media screen and (max-width: 720px) {
+    .bigText {
         line-height: 1.3;
-        font-size: 4rem;
+        font-size: 5rem;
     }
-    .smallText{
-        font-size: 1rem;
+    .smallText {
+        font-size: 2rem;
     }
 }
