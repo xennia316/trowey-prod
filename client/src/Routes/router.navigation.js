@@ -4,6 +4,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { Home, Tips, AdminSignUp } from "../Pages";
 import MyRoutes from "../Components/RoutesPage/Routes";
 import Login from "../Components/Login/Login";
+import Signup from "../Components/signup/Signup";
 const Routers = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -28,6 +29,7 @@ const Routers = () => {
         <Route path="/tips" element={<Tips />} />
         <Route path="/routes" element={<MyRoutes />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/admin-signup" element={<AdminSignUp />} />
       </Routes>
     </Router>
