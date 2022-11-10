@@ -1,26 +1,20 @@
 const express = require('express');
 const getWeek = require('../utils');
+const sendMessage = require('../sendMessage');
 const router = express.Router();
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const validateRequest = require('../middlewares/Auth');
 
-const { Routes,Collectors } = require('../models');
-
-//Encryption Level
-const encLevel = parseInt(process.env.BCRYPT_ENC_LEVEL);
-
-//Secret Key
-const JWT_SECRET = process.env.JWT_SECRET;
+const { Routes, Collectors } = require('../models');
 
 router.post('/save', validateRequest, async (req, res) => {
     const { cid } = req.collector;
     const data = req.body;
     data.cid = cid;
     try {
-        await Routes.create(data);
+        const route = await Routes.create(data);
+        await sendMessage(route);
         res.json({success: true});
     }
     catch (e) {
