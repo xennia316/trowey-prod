@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import { Home } from "../Pages";
 import MyRoutes from "../Components/RoutesPage/Routes";
+import Login from "../Components/Login/Login";
 const Routers = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -25,6 +26,7 @@ const Routers = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/routes" element={<MyRoutes />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

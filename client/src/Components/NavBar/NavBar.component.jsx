@@ -33,7 +33,7 @@ const NavBar = () => {
             <NavLink  className={`${styles.listItems}`}>About</NavLink >
             <NavLink to='/routes' className={`${styles.listItems}`}>Routes</NavLink >
             <NavLink  className={`${styles.listItems}`}>Tips</NavLink >
-            <NavLink  className={`${styles.listItems}`}>Login</NavLink >
+            <NavLink to="/login" className={`${styles.listItems}`}>Login</NavLink >
           </ul>
         ) : (
           <section className={`${styles.toggler}`}>{toggler}</section>
