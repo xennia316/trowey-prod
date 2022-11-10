@@ -1,6 +1,6 @@
-import InputStyles from './Input.module.css'
+import InputStyles from "./Input.module.css";
 
-function Input({label, placeholder, sublabel}) {
+function Input({ label, placeholder, sublabel }) {
   return (
     <div className={InputStyles.input}>
       <div className={InputStyles.label}>
@@ -14,4 +14,4 @@ function Input({label, placeholder, sublabel}) {
   );
 }
 
-export default Input
+export default Input;

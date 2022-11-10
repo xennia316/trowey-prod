@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100vw;
+    height: fit-content;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 6rem;
+    padding: 5rem 0;
+}
+.h2 {
+    font-size: 64px;
+    color: #4c5b00;
+    width: 64%;
+    margin: 2rem auto;
+}
+@media screen and (max-width: 1214px) {
+    .wrapper{
+        padding: 2rem;
+    }
+    .gridContainer {
+        grid-template-columns: repeat(1, auto);
+    }
+    .h2{
+        width: fit-content;
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 560px) { 
+    
+}

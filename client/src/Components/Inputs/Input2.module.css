@@ -1,0 +1,23 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+.label {
+    display: flex;
+    justify-content: space-between;
+}
+.mainInput {
+    padding: 1.75rem;
+}
+.labelMain{
+    font-size: 24px;
+}
+.subLabel{
+    color:  #4c5b00;
+    cursor: pointer;
+    padding: 0;
+}
+.mainInput::placeholder{
+    font-size: 24px ;
+}
