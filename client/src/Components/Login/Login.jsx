@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import LoginStyles from "./Login.module.css";
 import Input from "../Inputs/Input";
 function Login() {
@@ -7,7 +8,11 @@ function Login() {
         <h2>Login</h2>
         <div className={LoginStyles.inputs}>
           <Input label="Phone Number" placeholder="6xx xxx xxx" />
-          <Input label="Password" placeholder="Password" sublabel="Forgot password"/>
+          <Input
+            label="Password"
+            placeholder="Password"
+            sublabel="Forgot password"
+          />
         </div>
         <button>Login</button>
         Don't have an account? Sign Up
