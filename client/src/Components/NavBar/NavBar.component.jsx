@@ -1,54 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faList } from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
-  const [isopen, setIsopen] = useState(true);
-  const toggler = isopen ? (
-    <FontAwesomeIcon
-      icon={faXmark}
-      onClick={() => {
-        setIsopen(!isopen);
-      }}
-    />
-  ) : (
-    <FontAwesomeIcon
-      icon={faList}
-      onClick={() => {
-        setIsopen(!isopen);
-      }}
-    />
-  );
-
   return (
-    <section className={`${styles.wrapper}`}>
-      <section className={`${styles.container}`}>
-        <h2 className={`${styles.listItem}`}>Trowey</h2>
-        {isopen ? (
-          <ul className={`${styles.listContainer}`} role="group">
-            <section className={`${styles.toggler}`}>{toggler}</section>
-            <NavLink to="/" className={`${styles.listItems}`}>
-              Home
-            </NavLink>
-            <NavLink to="/about" className={`${styles.listItems}`}>
-              About
-            </NavLink>
-            <NavLink to="/routes" className={`${styles.listItems}`}>
-              Routes
-            </NavLink>
-            <NavLink to="/tips" className={`${styles.listItems}`}>
-              Tips
-            </NavLink>
-            <NavLink to="/login" className={`${styles.listItems}`}>
-              Login
-            </NavLink>
-          </ul>
-        ) : (
-          <section className={`${styles.toggler}`}>{toggler}</section>
-        )}
-      </section>
+    <section classNameName={`${styles.wrapper}`}>
+      <div className={styles.nav}>
+        <input type="checkbox" iclassName={styles.navChecked} />
+        <div className={styles.navHeader}>
+          <div className={styles.navTitle}>Trowey</div>
+        </div>
+        <div className={styles.navBtn}>
+          <label for={styles.navChecks}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div className={styles.navLinks}>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="routes">Routes</NavLink>
+          <NavLink to="/tips">Tips</NavLink>
+          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/signup">SignUp</NavLink>
+        </div>
+      </div>
     </section>
   );
 };
